@@ -139,7 +139,7 @@ def download_report(report, start_date, end_date):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-r", "--report", type=str)
+    parser.add_argument("-r", "--report", type=str, help='Name of the report to download')
     parser.add_argument("-s", "--startdate", type=str, help='Date in DD.MM.YYYY format')
     parser.add_argument("-e", "--enddate", type=str, help='Date in DD.MM.YYYY format')
     args = vars(parser.parse_args())
